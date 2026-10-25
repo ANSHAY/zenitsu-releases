@@ -11,7 +11,7 @@
       "name": "zenitsu",
       "source": "./claude-plugin",
       "description": "Use Zenitsu well from Claude Code: the zenitsu-mcp server, a skill with the rules for tasks, notes and reviews, and commands for a daily-note line and the Sunday review.",
-      "version": "1.22.1",
+      "version": "1.22.2",
       "category": "productivity",
       "tags": ["tasks", "notes", "mcp", "productivity"]
     }

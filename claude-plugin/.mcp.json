@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "zenitsu": {
-      "command": "sh",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/start-zenitsu-mcp.sh"]
+      "command": "${CLAUDE_PLUGIN_ROOT}/scripts/start-zenitsu-mcp.sh",
+      "args": []
     }
   }
 }
