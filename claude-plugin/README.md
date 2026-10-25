@@ -21,3 +21,7 @@ Or from a terminal: `claude plugin marketplace add ANSHAY/zenitsu-releases`, the
 ## Your own rules
 
 Create a note titled **House rules** in a folder called **Claude** in Zenitsu, and write your conventions there in plain words: special projects, priority bands, which writes need your approval, where reviews go. The skill reads it at the start of every Zenitsu session, and it wins over the skill's general rules. In **Settings → AI apps → Rules for AI apps** you can also make the server itself refuse tasks without a priority, a type or a due date.
+
+## Privacy
+
+Zenitsu sends nothing anywhere: your tasks and notes stay on your computer. The AI app you connect shares what it reads with its own provider. Full policy: [Zenitsu privacy policy](https://xernaitech.com/app/zenitsu/privacy-policy/).
