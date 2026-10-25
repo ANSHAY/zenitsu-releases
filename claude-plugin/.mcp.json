@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "zenitsu": {
+      "command": "zenitsu-mcp",
+      "args": []
+    }
+  }
+}

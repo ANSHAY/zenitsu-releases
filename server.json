@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.xernaitech/zenitsu",
+  "title": "Zenitsu",
+  "description": "Your local Zenitsu tasks and notes for AI apps. Needs the Zenitsu app (Linux).",
+  "websiteUrl": "https://github.com/ANSHAY/zenitsu-releases",
+  "repository": {
+    "url": "https://github.com/ANSHAY/zenitsu-releases",
+    "source": "github"
+  },
+  "version": "1.22.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/ANSHAY/zenitsu-releases/releases/download/v1.22.0%2B36/zenitsu-mcp-linux-x64.mcpb",
+      "fileSha256": "37b0c7dd1df3dcab44b5da35e2d8cf83b7ab5d4980f40f2a2ff67caa72d14239",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ZENITSU_DB",
+          "description": "Path to zenitsu.sqlite, if it is not in the usual place (~/.local/share/com.xernai.zenitsu/).",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "zenitsu",
+  "owner": {
+    "name": "Anshay Agarwal"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for Zenitsu, the local task manager and notebook."
+  },
+  "plugins": [
+    {
+      "name": "zenitsu",
+      "source": "./claude-plugin",
+      "description": "Use Zenitsu well from Claude Code: the zenitsu-mcp server, a skill with the rules for tasks, notes and reviews, and commands for a daily-note line and the Sunday review.",
+      "version": "1.22.0",
+      "category": "productivity",
+      "tags": ["tasks", "notes", "mcp", "productivity"]
+    }
+  ]
+}
