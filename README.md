@@ -31,7 +31,7 @@ Install Zenitsu first and open it once. It includes `zenitsu-mcp`, a small progr
 | VS Code (Copilot) | `code --add-mcp '{"name":"zenitsu","type":"stdio","command":"zenitsu-mcp"}'` |
 | Cursor, Claude Desktop, Gemini and others | add `{"mcpServers": {"zenitsu": {"command": "zenitsu-mcp", "args": []}}}` to the app's MCP settings |
 
-With the AppImage, use the AppImage's path as the command and `mcp` as its first argument. In Zenitsu, **Settings → AI apps** shows the exact setup for your computer and lets you require that every task an AI adds has a priority, a type and a due date.
+With the AppImage, use the AppImage's path as the command and `mcp` as its first argument (for the Claude Code plugin, set `ZENITSU_APPIMAGE` to the AppImage's path instead). In Zenitsu, **Settings → AI apps** shows the exact setup for your computer and lets you require that every task an AI adds has a priority, a type and a due date.
 
 ## Licence
 

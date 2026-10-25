@@ -1,7 +1,7 @@
 {
   "name": "zenitsu",
   "displayName": "Zenitsu",
-  "version": "1.22.0",
+  "version": "1.22.1",
   "description": "Use Zenitsu well from Claude Code: the zenitsu-mcp server, a skill with the rules for tasks, notes and reviews, and commands for a daily-note line and the Sunday review.",
   "author": {
     "name": "Anshay Agarwal"
