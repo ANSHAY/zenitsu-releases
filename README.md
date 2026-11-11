@@ -23,6 +23,8 @@ Install Zenitsu first and open it once. It includes `zenitsu-mcp`, a small progr
 /plugin install zenitsu@zenitsu
 ```
 
+Anthropic's plugin directory lists a copy with the same skill and commands but without the server (the directory accepts only plugins whose programs are inside them). If you install that copy instead, connect Zenitsu with **Settings → AI apps → Copy command** in the app. Install one of the two, not both.
+
 **Other AI apps** — point them at `zenitsu-mcp`:
 
 | App | How |
@@ -35,4 +37,4 @@ With the AppImage, use the AppImage's path as the command and `mcp` as its first
 
 ## Licence
 
-The plugin in `claude-plugin/` is MIT-licensed; everything else is all rights reserved. See [LICENSE.md](LICENSE.md).
+The plugin, in `claude-plugin-full/` and its directory copy in `claude-plugin/`, is MIT-licensed; everything else is all rights reserved. See [LICENSE.md](LICENSE.md).

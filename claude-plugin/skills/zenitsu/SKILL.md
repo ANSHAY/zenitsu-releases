@@ -7,6 +7,14 @@ description: Rules for using Zenitsu, the user's local task manager and notebook
 
 Zenitsu is the user's own task manager and notebook. The `zenitsu` MCP tools read and change it directly, and the user sees every change in the open app within about a second. It is the one place that shows what is going on across all of their projects, so keep it true.
 
+## If the Zenitsu tools are missing
+
+The tools come from `zenitsu-mcp`, a program that ships with the Zenitsu app and runs on the user's own computer, so they exist only in apps running there, such as Claude Code. If `get_overview` is not available, do not guess and do not keep the tasks somewhere else: tell the user once how to connect, then carry on with the rest of the work.
+
+- **Zenitsu is not installed:** it is free for Linux at https://github.com/ANSHAY/zenitsu-releases. Install it and open it once.
+- **Zenitsu is installed:** in Zenitsu, open **Settings → AI apps**, press **Copy command** beside Claude Code, run that command in a terminal, and restart Claude Code (or reconnect with `/mcp`).
+- **With the AppImage:** the copied command already starts the server through the AppImage.
+
 ## Start of every Zenitsu session
 
 1. Call `get_overview`. It gives **today's date** (use it, not your own idea of the date: work after midnight belongs to the new day), the time zone, every bucket, project, type and status by their exact names, and `rules_for_ai`.

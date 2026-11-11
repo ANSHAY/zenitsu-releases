@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 Run the Sunday review in Zenitsu. Answers the user has already written: $ARGUMENTS
 
-1. **Get the frame.** Call `get_overview` (today's date) and read the note **Claude › House rules**. If the house rules describe the review (which tasks hold the questions, where the note goes, what else is recorded), follow them exactly; they win over every default below.
+1. **Get the frame.** Call `get_overview` (today's date) and read the note **Claude › House rules**. If the house rules describe the review (which tasks hold the questions, where the note goes, what else is recorded), follow them exactly; they win over every default below. If the Zenitsu tools are not available, say how to connect them, as the `zenitsu` skill's "If the Zenitsu tools are missing" describes, and stop.
 2. **Find the review tasks.** `list_tasks` with `search: "review"` and `snoozed: "all"`, plus any check-in or mood-score tasks the house rules name. Read each one with `get_task`: their details hold the questions.
 3. **Read the week** (Monday to today): `get_timeline` with `from`/`to` and `include_status_moves: true`; the daily notes of those days (`run_sql_query` on `notes` by `date(note_date/1000, 'unixepoch', 'localtime')`, or `read_note` with each `date`); open tasks that are overdue (`list_tasks` with `due_before: "today"`); tasks in progress or blocked.
 4. **Ask once.** Unless the answers were given above, ask every question from the review tasks in **one** message, with a short summary of the week first (what was finished, what slipped, what is overdue). Never ask them one by one.
